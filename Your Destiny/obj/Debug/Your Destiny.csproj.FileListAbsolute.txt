@@ -1,0 +1,15 @@
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\bin\Debug\Your Destiny.exe.config
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\bin\Debug\Your Destiny.exe
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\bin\Debug\Your Destiny.pdb
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your Destiny.csproj.AssemblyReference.cache
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your Destiny.csproj.SuggestedBindingRedirects.cache
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your_Destiny.LoadingWindow.resources
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your_Destiny.Properties.Resources.resources
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your Destiny.csproj.GenerateResource.cache
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your Destiny.csproj.CoreCompileInputs.cache
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your Destiny.exe
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your Destiny.pdb
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your_Destiny.MenuWindow.resources
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your_Destiny.GameWindow.resources
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your_Destiny.HelpWindow.resources
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your_Destiny.InfoProgramWindow.resources
