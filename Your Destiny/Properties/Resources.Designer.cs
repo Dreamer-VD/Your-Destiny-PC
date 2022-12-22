@@ -273,6 +273,16 @@ namespace Your_Destiny.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap On {
+            get {
+                object obj = ResourceManager.GetObject("On", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap playgame {
             get {
                 object obj = ResourceManager.GetObject("playgame", resourceCulture);

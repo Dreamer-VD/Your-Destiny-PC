@@ -59,6 +59,7 @@
             this.buttonClickNext3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
             this.buttonClickNext3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonClickNext3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClickNext3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonClickNext3.ForeColor = System.Drawing.Color.Yellow;
             this.buttonClickNext3.Location = new System.Drawing.Point(0, 146);
             this.buttonClickNext3.Name = "buttonClickNext3";
@@ -66,12 +67,14 @@
             this.buttonClickNext3.TabIndex = 3;
             this.buttonClickNext3.Text = "Выбор3";
             this.buttonClickNext3.UseVisualStyleBackColor = false;
+            this.buttonClickNext3.Visible = false;
             // 
             // buttonClickNext2
             // 
             this.buttonClickNext2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
             this.buttonClickNext2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonClickNext2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClickNext2.Font = new System.Drawing.Font("Times New Roman", 14.25F);
             this.buttonClickNext2.ForeColor = System.Drawing.Color.Yellow;
             this.buttonClickNext2.Location = new System.Drawing.Point(0, 178);
             this.buttonClickNext2.Name = "buttonClickNext2";
@@ -79,18 +82,20 @@
             this.buttonClickNext2.TabIndex = 2;
             this.buttonClickNext2.Text = "Выбор2";
             this.buttonClickNext2.UseVisualStyleBackColor = false;
+            this.buttonClickNext2.Visible = false;
             // 
             // buttonClickNext1
             // 
             this.buttonClickNext1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
             this.buttonClickNext1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.buttonClickNext1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonClickNext1.Font = new System.Drawing.Font("Times New Roman", 14.25F);
             this.buttonClickNext1.ForeColor = System.Drawing.Color.Yellow;
             this.buttonClickNext1.Location = new System.Drawing.Point(0, 210);
             this.buttonClickNext1.Name = "buttonClickNext1";
             this.buttonClickNext1.Size = new System.Drawing.Size(990, 32);
             this.buttonClickNext1.TabIndex = 1;
-            this.buttonClickNext1.Text = "Выбор1";
+            this.buttonClickNext1.Text = "Продолжить";
             this.buttonClickNext1.UseVisualStyleBackColor = false;
             this.buttonClickNext1.Click += new System.EventHandler(this.buttonClickNext1_Click);
             // 
@@ -106,12 +111,13 @@
             // 
             // labelRole
             // 
+            this.labelRole.AutoSize = true;
             this.labelRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
             this.labelRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelRole.ForeColor = System.Drawing.Color.Yellow;
             this.labelRole.Location = new System.Drawing.Point(-1, 358);
             this.labelRole.Name = "labelRole";
-            this.labelRole.Size = new System.Drawing.Size(170, 37);
+            this.labelRole.Size = new System.Drawing.Size(173, 31);
             this.labelRole.TabIndex = 1;
             this.labelRole.Text = "Кто говорит";
             // 
@@ -120,11 +126,12 @@
             this.pictureBoxRole.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxRole.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxRole.BackgroundImage = global::Your_Destiny.Properties.Resources.author;
-            this.pictureBoxRole.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBoxRole.Location = new System.Drawing.Point(370, 39);
+            this.pictureBoxRole.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxRole.Location = new System.Drawing.Point(0, 163);
             this.pictureBoxRole.Name = "pictureBoxRole";
-            this.pictureBoxRole.Size = new System.Drawing.Size(351, 356);
+            this.pictureBoxRole.Size = new System.Drawing.Size(185, 192);
             this.pictureBoxRole.TabIndex = 2;
             this.pictureBoxRole.TabStop = false;
             // 
@@ -151,6 +158,7 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRole)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
