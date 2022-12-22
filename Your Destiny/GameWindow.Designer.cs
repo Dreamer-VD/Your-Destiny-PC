@@ -48,9 +48,9 @@
             this.panel1.Controls.Add(this.buttonClickNext1);
             this.panel1.Controls.Add(this.labelTextDialogues);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 398);
+            this.panel1.Location = new System.Drawing.Point(0, 428);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(990, 242);
+            this.panel1.Size = new System.Drawing.Size(990, 261);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -61,13 +61,14 @@
             this.buttonClickNext3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClickNext3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonClickNext3.ForeColor = System.Drawing.Color.Yellow;
-            this.buttonClickNext3.Location = new System.Drawing.Point(0, 146);
+            this.buttonClickNext3.Location = new System.Drawing.Point(0, 159);
             this.buttonClickNext3.Name = "buttonClickNext3";
-            this.buttonClickNext3.Size = new System.Drawing.Size(990, 32);
+            this.buttonClickNext3.Size = new System.Drawing.Size(990, 34);
             this.buttonClickNext3.TabIndex = 3;
             this.buttonClickNext3.Text = "Выбор3";
             this.buttonClickNext3.UseVisualStyleBackColor = false;
             this.buttonClickNext3.Visible = false;
+            this.buttonClickNext3.Click += new System.EventHandler(this.buttonClickNext3_Click);
             // 
             // buttonClickNext2
             // 
@@ -76,13 +77,14 @@
             this.buttonClickNext2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClickNext2.Font = new System.Drawing.Font("Times New Roman", 14.25F);
             this.buttonClickNext2.ForeColor = System.Drawing.Color.Yellow;
-            this.buttonClickNext2.Location = new System.Drawing.Point(0, 178);
+            this.buttonClickNext2.Location = new System.Drawing.Point(0, 193);
             this.buttonClickNext2.Name = "buttonClickNext2";
-            this.buttonClickNext2.Size = new System.Drawing.Size(990, 32);
+            this.buttonClickNext2.Size = new System.Drawing.Size(990, 34);
             this.buttonClickNext2.TabIndex = 2;
             this.buttonClickNext2.Text = "Выбор2";
             this.buttonClickNext2.UseVisualStyleBackColor = false;
             this.buttonClickNext2.Visible = false;
+            this.buttonClickNext2.Click += new System.EventHandler(this.buttonClickNext2_Click);
             // 
             // buttonClickNext1
             // 
@@ -91,9 +93,9 @@
             this.buttonClickNext1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClickNext1.Font = new System.Drawing.Font("Times New Roman", 14.25F);
             this.buttonClickNext1.ForeColor = System.Drawing.Color.Yellow;
-            this.buttonClickNext1.Location = new System.Drawing.Point(0, 210);
+            this.buttonClickNext1.Location = new System.Drawing.Point(0, 227);
             this.buttonClickNext1.Name = "buttonClickNext1";
-            this.buttonClickNext1.Size = new System.Drawing.Size(990, 32);
+            this.buttonClickNext1.Size = new System.Drawing.Size(990, 34);
             this.buttonClickNext1.TabIndex = 1;
             this.buttonClickNext1.Text = "Продолжить";
             this.buttonClickNext1.UseVisualStyleBackColor = false;
@@ -105,7 +107,7 @@
             this.labelTextDialogues.ForeColor = System.Drawing.Color.Yellow;
             this.labelTextDialogues.Location = new System.Drawing.Point(0, 0);
             this.labelTextDialogues.Name = "labelTextDialogues";
-            this.labelTextDialogues.Size = new System.Drawing.Size(990, 145);
+            this.labelTextDialogues.Size = new System.Drawing.Size(990, 156);
             this.labelTextDialogues.TabIndex = 0;
             this.labelTextDialogues.Text = "Текст диалогов";
             // 
@@ -115,7 +117,7 @@
             this.labelRole.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
             this.labelRole.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelRole.ForeColor = System.Drawing.Color.Yellow;
-            this.labelRole.Location = new System.Drawing.Point(-1, 358);
+            this.labelRole.Location = new System.Drawing.Point(-1, 386);
             this.labelRole.Name = "labelRole";
             this.labelRole.Size = new System.Drawing.Size(173, 31);
             this.labelRole.TabIndex = 1;
@@ -129,22 +131,23 @@
             this.pictureBoxRole.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxRole.BackgroundImage = global::Your_Destiny.Properties.Resources.author;
             this.pictureBoxRole.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBoxRole.Location = new System.Drawing.Point(0, 163);
+            this.pictureBoxRole.Location = new System.Drawing.Point(0, 176);
             this.pictureBoxRole.Name = "pictureBoxRole";
-            this.pictureBoxRole.Size = new System.Drawing.Size(185, 192);
+            this.pictureBoxRole.Size = new System.Drawing.Size(185, 207);
             this.pictureBoxRole.TabIndex = 2;
             this.pictureBoxRole.TabStop = false;
             // 
             // GameWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Your_Destiny.Properties.Resources.cosmodrom1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(990, 640);
+            this.ClientSize = new System.Drawing.Size(990, 689);
             this.Controls.Add(this.pictureBoxRole);
             this.Controls.Add(this.labelRole);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;

@@ -106,7 +106,7 @@ namespace Your_Destiny
                 labelRole.Text = "Рассказчик:";
                 buttonClickNext3.Visible = true;
                 buttonClickNext1.Text = "Согласиться";
-                buttonClickNext3.Text = "Отказать";
+                buttonClickNext3.Text = "Отказаться";
             }
             else if (labelTextDialogues.Text == File.ReadAllText(@"Text12.txt"))
             {
@@ -139,7 +139,7 @@ namespace Your_Destiny
                 buttonClickNext2.Visible = true;
                 buttonClickNext3.Visible = true;
             }
-            else if (labelTextDialogues.Text == File.ReadAllText(@"Text16.txt"))
+            else if (labelTextDialogues.Text == File.ReadAllText(@"Text16.txt") )
             {
                 pictureBoxRole.BackgroundImage = Image.FromFile("author.png");
                 labelTextDialogues.Text = File.ReadAllText(@"Text17.txt");
@@ -148,7 +148,7 @@ namespace Your_Destiny
                 buttonClickNext3.Visible = false;
                 buttonClickNext1.Text = "Продолжить";
             }
-            else if (labelTextDialogues.Text == File.ReadAllText(@"Text17.txt"))
+            else if (labelTextDialogues.Text == File.ReadAllText(@"Text17.txt") || labelTextDialogues.Text == File.ReadAllText(@"TextAC.txt"))
             {
                 pictureBoxRole.BackgroundImage = Image.FromFile("author.png");
                 labelTextDialogues.Text = File.ReadAllText(@"Text18.txt");
@@ -222,7 +222,7 @@ namespace Your_Destiny
                 buttonClickNext3.Visible = true;
                 buttonClickNext2.Visible = false;
                 buttonClickNext1.Text = "Пролететь незаметно";
-                buttonClickNext3.Text = "В бой";
+                buttonClickNext3.Text = "В бой!";
                 this.BackgroundImage = Image.FromFile("korabl.png");
             }
             else if (labelTextDialogues.Text == File.ReadAllText(@"Text27.txt"))
@@ -325,14 +325,14 @@ namespace Your_Destiny
                 labelRole.Text = "Рассказчик:";
                 this.BackgroundImage = Image.FromFile("gorod.png");
             }
-            else if (labelTextDialogues.Text == File.ReadAllText(@"Text41.txt"))
+            else if (labelTextDialogues.Text == File.ReadAllText(@"Text41.txt") || labelTextDialogues.Text == File.ReadAllText(@"TextAC-EndGame5.txt"))
             {
                 pictureBoxRole.BackgroundImage = Image.FromFile("author.png");
                 labelTextDialogues.Text = File.ReadAllText(@"Text-EndGame1.txt");
                 labelRole.Text = "Рассказчик:";
                 this.BackgroundImage = Image.FromFile("darkwill.png");
             }
-            else if (labelTextDialogues.Text == File.ReadAllText(@"Text-EndGame1.txt"))
+            else if (labelTextDialogues.Text == File.ReadAllText(@"Text-EndGame1.txt") )
             {
                 pictureBoxRole.BackgroundImage = Image.FromFile("author.png");
                 labelTextDialogues.Text = File.ReadAllText(@"Text-End.txt");
@@ -357,6 +357,145 @@ namespace Your_Destiny
             if (result == DialogResult.Yes)
             {
                 Application.OpenForms[0].Close();
+            }
+        }
+
+        private void buttonClickNext2_Click(object sender, EventArgs e)
+        {
+            if (buttonClickNext2.Text== "Не обращать внимание")
+            {
+                pictureBoxRole.BackgroundImage = Image.FromFile("ghost.png");
+                labelTextDialogues.Text = File.ReadAllText(@"Text4.txt");
+                labelRole.Text = "Призрак:";
+                buttonClickNext1.Text = "Хорошо (кивнуть головой)";
+                buttonClickNext2.Visible = false;
+                buttonClickNext3.Visible = false;
+            }
+            else if (buttonClickNext2.Text == "Взять хитростью")
+            {
+                pictureBoxRole.BackgroundImage = Image.FromFile("author.png");
+                labelTextDialogues.Text = File.ReadAllText(@"TextAC.txt");
+                labelRole.Text = "Рассказчик:";
+                buttonClickNext1.Text = "Продолжить";
+                buttonClickNext3.Visible = false;
+                buttonClickNext2.Visible = false;
+            }
+            else if (buttonClickNext2.Text == "Отправиться за Распутиным")
+            {
+                pictureBoxRole.BackgroundImage = Image.FromFile("author.png");
+                labelTextDialogues.Text = File.ReadAllText(@"TextAC-EndGame.txt");
+                labelRole.Text = "Рассказчик:";
+                buttonClickNext2.Text = "Продолжить";
+                buttonClickNext1.Visible = false;
+                this.BackgroundImage = Image.FromFile("korabl.png");
+            }
+            else if (labelTextDialogues.Text == File.ReadAllText(@"TextAC-EndGame.txt"))
+            {
+                labelTextDialogues.Text = File.ReadAllText(@"TextAC-EndGame1.txt");
+                this.BackgroundImage = Image.FromFile("bunker.png");
+            }
+            else if (labelTextDialogues.Text == File.ReadAllText(@"TextAC-EndGame1.txt"))
+            {
+                labelTextDialogues.Text = File.ReadAllText(@"TextAC-EndGame2.txt");
+                this.BackgroundImage = Image.FromFile("inrasputin.png");
+            }
+            else if (labelTextDialogues.Text == File.ReadAllText(@"TextAC-EndGame2.txt"))
+            {
+                labelTextDialogues.Text = File.ReadAllText(@"TextAC-EndGame3.txt");
+                buttonClickNext3.Visible= true;
+                buttonClickNext3.Text = "33515";
+                buttonClickNext2.Text = "32515";
+            }
+            else if (buttonClickNext2.Text == "32515")
+            {
+                labelTextDialogues.Text = File.ReadAllText(@"TextAC-EndGame4.txt");
+                buttonClickNext3.Visible = false;
+                buttonClickNext2.Text = "Продолжить";
+            }
+            else if (labelTextDialogues.Text == File.ReadAllText(@"TextAC-EndGame4.txt"))
+            {
+                labelTextDialogues.Text = File.ReadAllText(@"TextAC-EndGame5.txt");
+                this.BackgroundImage = Image.FromFile("gorod.png");
+                buttonClickNext1.Visible = true;
+                buttonClickNext2.Visible = false;
+                buttonClickNext1.Text = "Продолжить";
+            }
+        }
+
+        private void buttonClickNext3_Click(object sender, EventArgs e)
+        {
+            if (buttonClickNext3.Text == "Вернуться в меню")
+            {
+                MenuWindow window = new MenuWindow();
+                window.Show();
+                this.Hide();
+            }
+            else  if (buttonClickNext3.Text=="Выстрелить в сферу")
+            {
+                buttonClickNext1.Visible = false;
+                buttonClickNext2.Visible = false;
+                labelTextDialogues.Text = File.ReadAllText(@"text1EndGame.txt");
+                labelRole.Text = "Рассказчик:";
+                pictureBoxRole.BackgroundImage = Image.FromFile("deadghost.png");
+                buttonClickNext3.Text = "Вернуться в меню";
+            }
+            else if (buttonClickNext3.Text == "Отказаться")
+            {
+                buttonClickNext1.Visible = false;
+                buttonClickNext2.Visible = false;
+                labelTextDialogues.Text = File.ReadAllText(@"text2EndGame.txt");
+                labelRole.Text = "Рассказчик:";
+                pictureBoxRole.BackgroundImage = Image.FromFile("deadghost.png");
+                buttonClickNext3.Text = "Вернуться в меню";
+            }
+            else if (buttonClickNext3.Text == "Пригрозить")
+            {
+                buttonClickNext1.Visible = false;
+                buttonClickNext2.Visible = false;
+                labelTextDialogues.Text = File.ReadAllText(@"text3EndGame.txt");
+                labelRole.Text = "Рассказчик:";
+                pictureBoxRole.BackgroundImage = Image.FromFile("deadghost.png");
+                buttonClickNext3.Text = "Вернуться в меню";
+            }
+            else if (buttonClickNext3.Text == "Убежать")
+            {
+                buttonClickNext1.Visible = false;
+                buttonClickNext2.Visible = false;
+                labelTextDialogues.Text = File.ReadAllText(@"text4EndGame.txt");
+                labelRole.Text = "Рассказчик:";
+                pictureBoxRole.BackgroundImage = Image.FromFile("deadghost.png");
+                buttonClickNext3.Text = "Вернуться в меню";
+                this.BackgroundImage = Image.FromFile("night.png");
+            }
+            else if (buttonClickNext3.Text == "В бой!")
+            {
+                buttonClickNext1.Visible = false;
+                buttonClickNext2.Visible = false;
+                labelTextDialogues.Text = File.ReadAllText(@"text5EndGame.txt");
+                labelRole.Text = "Рассказчик:";
+                pictureBoxRole.BackgroundImage = Image.FromFile("deadghost.png");
+                buttonClickNext3.Text = "Вернуться в меню";
+                this.BackgroundImage = Image.FromFile("night.png");
+            }
+            else if (buttonClickNext3.Text == "Стратегия одиночек")
+            {
+                buttonClickNext1.Visible = false;
+                buttonClickNext2.Visible = false;
+                labelTextDialogues.Text = File.ReadAllText(@"text6EndGame.txt");
+                labelRole.Text = "Рассказчик:";
+                pictureBoxRole.BackgroundImage = Image.FromFile("deadghost.png");
+                buttonClickNext3.Text = "Вернуться в меню";
+                this.BackgroundImage = Image.FromFile("night.png");
+            }
+            else if (buttonClickNext3.Text == "33515")
+            {
+                buttonClickNext1.Visible = false;
+                buttonClickNext2.Visible = false;
+                labelTextDialogues.Text = File.ReadAllText(@"text7EndGame.txt");
+                labelRole.Text = "Рассказчик:";
+                pictureBoxRole.BackgroundImage = Image.FromFile("deadghost.png");
+                buttonClickNext3.Text = "Вернуться в меню";
+                this.BackgroundImage = Image.FromFile("night.png");
             }
         }
     }
