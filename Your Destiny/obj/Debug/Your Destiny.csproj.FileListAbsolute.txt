@@ -13,3 +13,4 @@ E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your_Destin
 E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your_Destiny.GameWindow.resources
 E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your_Destiny.HelpWindow.resources
 E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your_Destiny.InfoProgramWindow.resources
+E:\Praktika dla chacheta\desctop\Your Destiny\Your Destiny\obj\Debug\Your_Destiny.HelpProgramWindow.resources

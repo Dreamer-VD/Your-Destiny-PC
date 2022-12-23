@@ -281,6 +281,7 @@
             this.richTextBoxTextInfo.ForeColor = System.Drawing.Color.Yellow;
             this.richTextBoxTextInfo.Location = new System.Drawing.Point(3, 0);
             this.richTextBoxTextInfo.Name = "richTextBoxTextInfo";
+            this.richTextBoxTextInfo.ReadOnly = true;
             this.richTextBoxTextInfo.Size = new System.Drawing.Size(1096, 216);
             this.richTextBoxTextInfo.TabIndex = 0;
             this.richTextBoxTextInfo.Text = "Информационный текст";

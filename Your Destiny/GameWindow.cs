@@ -498,5 +498,12 @@ namespace Your_Destiny
                 this.BackgroundImage = Image.FromFile("night.png");
             }
         }
+
+        private void вернутьсяВМенюToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MenuWindow window = new MenuWindow();
+            window.Show();
+            this.Hide();
+        }
     }
 }

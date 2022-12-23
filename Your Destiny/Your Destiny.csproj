@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HelpProgramWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpProgramWindow.Designer.cs">
+      <DependentUpon>HelpProgramWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoadingWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GameWindow.resx">
       <DependentUpon>GameWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpProgramWindow.resx">
+      <DependentUpon>HelpProgramWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HelpWindow.resx">
       <DependentUpon>HelpWindow.cs</DependentUpon>

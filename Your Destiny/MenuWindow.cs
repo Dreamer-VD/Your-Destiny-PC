@@ -66,5 +66,44 @@ namespace Your_Destiny
                 Application.OpenForms[0].Close();
             }
         }
+
+        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelpProgramWindow windowwindow = new HelpProgramWindow();
+            windowwindow.Show();
+        }
+
+        private void играToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GameWindow windowwindow = new GameWindow();
+            windowwindow.Show();
+            this.Hide();
+        }
+
+        private void информацияОПроисходящемToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HelpWindow window = new HelpWindow();
+            window.Show();
+            this.Hide();
+        }
+
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            InfoProgramWindow window = new InfoProgramWindow();
+            window.Show();
+            this.Hide();
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var result = new System.Windows.Forms.DialogResult();
+            result = MessageBox.Show("Вы точно хотите выйти?", "Внимание",
+                            MessageBoxButtons.YesNo,
+                            MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                Application.OpenForms[0].Close();
+            }
+        }
     }
 }

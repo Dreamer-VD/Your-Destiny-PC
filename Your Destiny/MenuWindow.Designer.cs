@@ -34,6 +34,14 @@
             this.buttonCLickInfo = new System.Windows.Forms.Button();
             this.buttonCLickExit = new System.Windows.Forms.Button();
             this.labelTextNameGame = new System.Windows.Forms.Label();
+            this.NavigationMenu = new System.Windows.Forms.MenuStrip();
+            this.справкаОПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.играToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.информацияОПроисходящемToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NavigationMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonClickPlay
@@ -63,13 +71,13 @@
             this.buttonClickReference.BackgroundImage = global::Your_Destiny.Properties.Resources.info;
             this.buttonClickReference.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonClickReference.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonClickReference.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonClickReference.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonClickReference.ForeColor = System.Drawing.Color.Yellow;
             this.buttonClickReference.Location = new System.Drawing.Point(268, 220);
             this.buttonClickReference.Name = "buttonClickReference";
             this.buttonClickReference.Size = new System.Drawing.Size(202, 122);
             this.buttonClickReference.TabIndex = 1;
-            this.buttonClickReference.Text = "Справка";
+            this.buttonClickReference.Text = "Информация о происходящем";
             this.buttonClickReference.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonClickReference.UseVisualStyleBackColor = true;
             this.buttonClickReference.Click += new System.EventHandler(this.buttonClickReference_Click);
@@ -120,12 +128,69 @@
             this.labelTextNameGame.BackColor = System.Drawing.Color.Transparent;
             this.labelTextNameGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTextNameGame.ForeColor = System.Drawing.Color.White;
-            this.labelTextNameGame.Location = new System.Drawing.Point(221, 9);
+            this.labelTextNameGame.Location = new System.Drawing.Point(226, 24);
             this.labelTextNameGame.Name = "labelTextNameGame";
             this.labelTextNameGame.Size = new System.Drawing.Size(299, 55);
             this.labelTextNameGame.TabIndex = 4;
             this.labelTextNameGame.Text = "Your Destiny";
             this.labelTextNameGame.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // NavigationMenu
+            // 
+            this.NavigationMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.справкаОПрограммеToolStripMenuItem,
+            this.справкаToolStripMenuItem});
+            this.NavigationMenu.Location = new System.Drawing.Point(0, 0);
+            this.NavigationMenu.Name = "NavigationMenu";
+            this.NavigationMenu.Size = new System.Drawing.Size(744, 24);
+            this.NavigationMenu.TabIndex = 6;
+            this.NavigationMenu.Text = "menuStrip1";
+            // 
+            // справкаОПрограммеToolStripMenuItem
+            // 
+            this.справкаОПрограммеToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.играToolStripMenuItem,
+            this.информацияОПроисходящемToolStripMenuItem,
+            this.оПрограммеToolStripMenuItem,
+            this.выходToolStripMenuItem});
+            this.справкаОПрограммеToolStripMenuItem.Name = "справкаОПрограммеToolStripMenuItem";
+            this.справкаОПрограммеToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.справкаОПрограммеToolStripMenuItem.Text = "Меню";
+            // 
+            // справкаToolStripMenuItem
+            // 
+            this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
+            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.справкаToolStripMenuItem.Text = "Справка";
+            this.справкаToolStripMenuItem.Click += new System.EventHandler(this.справкаToolStripMenuItem_Click);
+            // 
+            // играToolStripMenuItem
+            // 
+            this.играToolStripMenuItem.Name = "играToolStripMenuItem";
+            this.играToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.играToolStripMenuItem.Text = "Игра";
+            this.играToolStripMenuItem.Click += new System.EventHandler(this.играToolStripMenuItem_Click);
+            // 
+            // информацияОПроисходящемToolStripMenuItem
+            // 
+            this.информацияОПроисходящемToolStripMenuItem.Name = "информацияОПроисходящемToolStripMenuItem";
+            this.информацияОПроисходящемToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.информацияОПроисходящемToolStripMenuItem.Text = "Информация о происходящем";
+            this.информацияОПроисходящемToolStripMenuItem.Click += new System.EventHandler(this.информацияОПроисходящемToolStripMenuItem_Click);
+            // 
+            // оПрограммеToolStripMenuItem
+            // 
+            this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.оПрограммеToolStripMenuItem.Text = "О программе";
+            this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
+            // 
+            // выходToolStripMenuItem
+            // 
+            this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.выходToolStripMenuItem.Text = "Выход";
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // MenuWindow
             // 
@@ -134,6 +199,7 @@
             this.BackgroundImage = global::Your_Destiny.Properties.Resources.menu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(744, 671);
+            this.Controls.Add(this.NavigationMenu);
             this.Controls.Add(this.labelTextNameGame);
             this.Controls.Add(this.buttonCLickExit);
             this.Controls.Add(this.buttonClickPlay);
@@ -142,6 +208,7 @@
             this.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.NavigationMenu;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "MenuWindow";
@@ -150,6 +217,8 @@
             this.TopMost = true;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MenuWindow_FormClosed);
             this.Load += new System.EventHandler(this.MenuWindow_Load);
+            this.NavigationMenu.ResumeLayout(false);
+            this.NavigationMenu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,5 +231,12 @@
         private System.Windows.Forms.Button buttonCLickInfo;
         private System.Windows.Forms.Button buttonCLickExit;
         private System.Windows.Forms.Label labelTextNameGame;
+        private System.Windows.Forms.MenuStrip NavigationMenu;
+        private System.Windows.Forms.ToolStripMenuItem справкаОПрограммеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem играToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem информацияОПроисходящемToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
     }
 }
